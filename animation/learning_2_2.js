@@ -13,7 +13,7 @@ window.requestAnimFrame = (function() {
 var canvas = document.getElementById('animation');
 var ctx = canvas.getContext('2d');
 var W = window.innerWidth, H = window.innerHeight, linesListRight = [], linesListLeft = [];
-var v = 1, mp = [0.03,-0.03,0.04,0.05,-0.05,0.06,-0.06], linesNum = 50, alphaParam = 10, plusMinus = mp[Math.floor(Math.random()*mp.length)];
+var v = 1, mp = [0.03,-0.03,0.04,-0.04,0.05,-0.05,0.06,-0.06], linesNum = 50, alphaParam = 10;
 canvas.width = W;
 canvas.height = H*2/5;
 
