@@ -7,7 +7,8 @@ body{
 }
 /*canvas header block */
 canvas{
-  background-color: #213b66;
+  background-color: #0068B2;
+  /*background-color: #0E6BA5;*/
   position: absolute;
   top: 0px;
   left: 0px;
@@ -73,7 +74,7 @@ canvas{
 
 /*navivation bar*/
 .navbar-default{
-  background-color: #213b66;
+  background-color: #0068B2;
   margin: 0;
   height: 60px;
   top: 0px;

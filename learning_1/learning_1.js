@@ -40,3 +40,33 @@ function radgrad(){
 $(document).ready(function(){
   radgrad();
 });
+
+function logo(){
+  var canvas = document.getElementById('logo');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+    ctx.translate(300, 200)
+    ctx.beginPath();
+    ctx.fillStyle = "#0068B2";
+    ctx.moveTo(-100, 0);
+    ctx.lineTo(100, 150);
+    ctx.lineTo(300, 0);
+    ctx. lineTo(100, -150);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.fillStyle = "rgba(150, 0, 15, 0.9)";
+    ctx.moveTo(100, 0);
+    ctx.lineTo(-100, 150);
+    ctx.lineTo(-300, 0);
+    ctx. lineTo(-100, -150);
+    ctx.closePath();
+    ctx.fill();
+
+    var image = canvas.toDataURL();
+    console.log(image);
+  }
+}
+
+logo();
